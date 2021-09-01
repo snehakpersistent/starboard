@@ -304,7 +304,7 @@ func (p *plugin) SupportsKind(kind kube.Kind) bool {
 func (p *plugin) Init(ctx starboard.PluginContext) error {
 	return ctx.EnsureConfig(starboard.PluginConfig{
 		Data: map[string]string{
-			keyImageRef:                "quay.io/fairwinds/polaris:4.0",
+			keyImageRef:                "quay.io/snehakpersistent/polaris:latest",
 			keyConfigYaml:              DefaultConfigYAML,
 			keyResourcesRequestsCPU:    "50m",
 			keyResourcesRequestsMemory: "50M",
